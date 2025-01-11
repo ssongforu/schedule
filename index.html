@@ -17,6 +17,7 @@
             }
 
             .btn-select {
+                z-index: 10;
                 font-family: "Pretendard";
                 width: 100%;
                 padding: 13px 30px 13px 14px;
@@ -41,6 +42,7 @@
             }
 
             .list-member {
+                z-index: 9;
                 font-family: "Pretendard";
                 list-style-type : none;
                 display: none;
@@ -68,6 +70,7 @@
             }
 
             .list-member li button {
+
                 width: 100%;
                 padding: 7px 10px;
                 border: none;
@@ -86,6 +89,7 @@
             .list-member li button:focus {
                 background-color: #F8E4FF;
             }
+
             .wrap-vertical {
                 width: 100%;
                 padding: 20px;
@@ -99,8 +103,19 @@
             .wrap-vertical::-webkit-scrollbar{
                 display: none; 
             }
+            
+            .none {
+                z-index: 1;
+                display: inline-block;
+                position: relative;
+                margin: none;
+                padding: 1px;
+                background-color: #fff;
+                width: 30%;
+            }
 
             .times {
+                z-index: 1;
                 font-family: 'Pretendard';
                 display: inline-block;
                 position: relative;
@@ -110,16 +125,25 @@
                 align-items: center;
                 justify-content: center;
                 background-color: rgb(213, 223, 255);
-                width: 10%;
+                width: 30%;
                 text-align: center;
             }
 
-            .good {
+            .name {
+                z-index: 1;
                 font-family: 'Pretendard';
-                margin: 5px;
-                padding: 2.5px;
-                width: 50%;
+                position: relative;
+                border-radius: 8px;
+                margin: none;
+                padding: 1px;
+                margin-top: 5px;
+                width: 30%;
+                align-items: center;
+                justify-content: center;
+                background-color: rgb(230, 234, 238);
+                text-align: center;
             }
+
             @font-face {
                 font-family: 'Pretendard-Bold';
                 src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Bold.woff') format('woff');
@@ -162,48 +186,70 @@
             <li><button type="button">목</button></li>
             <li><button type="button">금</button></li>
         </ul>
-        <div class="wrap-vertical">
-            <div class="times">
-                <p>09</p>
+        <section>
+            <div class="wrap-vertical">
+                <div class="none"></div>
+                <div class="times">
+                    <p>09</p>
+                </div>
+                <div class="times">
+                    <p>10</p>
+                </div>
+                <div class="times">
+                    <p>11</p>
+                </div>
+                <div class="times">
+                    <p>12</p>
+                </div>
+                <div class="times">
+                    <p>13</p>
+                </div>
+                <div class="times">
+                    <p>14</p>
+                </div>
+                <div class="times">
+                    <p>15</p>
+                </div>
+                <div class="times">
+                    <p>16</p>
+                </div>
+                <div class="times">
+                    <p>17</p>
+                </div>
+                <div class="times">
+                    <p>18</p>
+                </div>
+                <div class="times">
+                    <p>19</p>
+                </div>
+                <div class="times">
+                    <p>20</p>
+                </div>
+                <div class="times">
+                    <p>21</p>
+                </div>
+                <div class="name">
+                    <p>듀우</p>
+                </div>
+                <div class="name">
+                    <p>듀우</p>
+                </div>
+                <div class="name">
+                    <p>듀우</p>
+                </div>
+                <div class="name">
+                    <p>듀우</p>
+                </div>
+                <div class="name">
+                    <p>듀우</p>
+                </div>
+                <div class="name">
+                    <p>듀우</p>
+                </div>
+                <div class="name">
+                    <p>듀우</p>
+                </div>
             </div>
-            <div class="times">
-                <p>10</p>
-            </div>
-            <div class="times">
-                <p>11</p>
-            </div>
-            <div class="times">
-                <p>12</p>
-            </div>
-            <div class="times">
-                <p>13</p>
-            </div>
-            <div class="times">
-                <p>14</p>
-            </div>
-            <div class="times">
-                <p>15</p>
-            </div>
-            <div class="times">
-                <p>16</p>
-            </div>
-            <div class="times">
-                <p>17</p>
-            </div>
-            <div class="times">
-                <p>18</p>
-            </div>
-            <div class="times">
-                <p>19</p>
-            </div>
-            <div class="times">
-                <p>20</p>
-            </div>
-            <div class="times">
-                <p>21</p>
-            </div>
-            <div class="good">hi!!!</div>
-        </div>
-
+        </section>
     </body>
 </html>
